@@ -1,4 +1,4 @@
-###Olha_Voichyk
+## Olha_Voichyk
 
-# Task1 - Basic Knowledge
-# Task2 - OOP 
+### Task1 - Basic Knowledge
+### Task2 - OOP 
