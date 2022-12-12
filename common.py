@@ -28,7 +28,7 @@ class DropboxTest:
             'Authorization': 'Bearer ' + self.access_token,
             'Content-Type': 'application/json'
         }
-        data = json.dumps({'path': '/home/TestWebAPIs/{}'.format(self.file_path)})
+        data = json.dumps({'path': self.dropbox_file_path})
         response = requests.post(url, headers=headers, data=data)
         return response
 
@@ -39,6 +39,6 @@ class DropboxTest:
             'Content-Type': 'application/json'
         }
         data = json.dumps(
-            {'path': '/home/TestWebAPIs/{}'.format(self.file_path)})
+            {'path': self.dropbox_file_path})
         response = requests.post(url, headers=headers, data=data)
         return response
